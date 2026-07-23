@@ -1,0 +1,315 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#EAF6FF,#D6ECFF,#C7E9FF);
+    color:#222;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#222;
+}
+
+.logo i{
+    color:#0d6efd;
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#0d6efd;
+}
+
+/* ================= EDUCATION ================= */
+
+.education{
+    min-height:100vh;
+    padding:130px 8% 80px;
+    text-align:center;
+}
+
+.education h1{
+    font-size:52px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.education h1 span{
+    color:#0d6efd;
+}
+
+.subtitle{
+    color:#555;
+    font-size:18px;
+    margin-bottom:50px;
+}
+
+/* ================= BOXES ================= */
+
+.education-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.edu-card{
+
+    background:#ffffff;
+
+    width:500px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.edu-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(13,110,253,.25);
+
+}
+
+.icon{
+
+    width:90px;
+
+    height:90px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.edu-card h2{
+
+    color:#0d6efd;
+
+    margin-bottom:10px;
+
+}
+
+.edu-card h3{
+
+    color:#333;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+.details{
+
+    text-align:left;
+
+}
+
+.details h4{
+
+    color:#0d6efd;
+
+    margin-bottom:10px;
+
+    margin-top:10px;
+
+}
+
+.details p{
+
+    margin:8px 0;
+
+    color:#555;
+
+    font-size:17px;
+
+}
+
+.details strong{
+
+    color:#222;
+
+}
+
+hr{
+
+    margin:18px 0;
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#ffffff;
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#555;
+
+    margin-top:60px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+.education-container{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.edu-card{
+
+width:100%;
+
+max-width:600px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+nav ul li{
+
+margin:10px;
+
+}
+
+.education h1{
+
+font-size:38px;
+
+}
+
+.subtitle{
+
+font-size:16px;
+
+}
+
+.edu-card{
+
+padding:25px;
+
+}
+
+.edu-card h3{
+
+font-size:18px;
+
+}
+
+.details p{
+
+font-size:15px;
+
+}
+
+}

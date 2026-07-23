@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#dff0ff;
+    color:#222;
+}
+
+
+/* ================= HEADING ================= */
+
+.heading{
+    text-align:center;
+    padding:60px 20px 40px;
+}
+
+.heading h1{
+    font-size:60px;
+    font-weight:700;
+    color:#222;
+}
+
+.heading h1 span{
+    color:#1565f5;
+}
+
+.heading p{
+    margin-top:15px;
+    font-size:24px;
+    color:#555;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+
+
+/* ================= CARD ================= */
+
+.card{
+
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    margin-bottom:35px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12);
+
+    transition:.3s;
+}
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ================= ICON ================= */
+
+
+.icon{
+
+    width:85px;
+    height:85px;
+
+    background:#1565f5;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:38px;
+
+    margin:0 auto 20px;
+
+}
+
+
+/* ================= TITLE ================= */
+
+
+.card h2{
+
+    text-align:center;
+
+    color:#1565f5;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* ================= TEXT ================= */
+
+
+.card p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+
+
+/* ================= LIST ================= */
+
+
+.card ul{
+
+    padding-left:35px;
+
+}
+
+
+.card ul li{
+
+    font-size:17px;
+
+    margin:12px 0;
+
+}
+
+
+
+/* ================= TABLE ================= */
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+table th{
+
+    background:#1565f5;
+
+    color:white;
+
+    padding:15px;
+
+    font-size:17px;
+
+}
+
+
+
+table td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+
+
+table tr:nth-child(even){
+
+    background:#f2f7ff;
+
+}
+
+
+
+table tr:hover{
+
+    background:#d9eaff;
+
+}
+
+
+
+/* ================= DIAGRAM ================= */
+
+
+pre{
+
+    background:#eef6ff;
+
+    border-left:6px solid #1565f5;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    color:#222;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    overflow:auto;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#1565f5;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:35px;
+
+    background:white;
+
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+.navbar a:hover{
+
+    color:#1565f5;
+
+}
+
+
+.navbar .active{
+
+    color:#1565f5;
+
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+    }
+
+
+    .navbar a{
+
+        font-size:15px;
+
+    }
+
+}
+
+footer{
+
+    background:#1565f5;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:16px;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+
+.heading h1{
+
+    font-size:42px;
+
+}
+
+
+.heading p{
+
+    font-size:18px;
+
+}
+
+
+.card{
+
+    padding:22px;
+
+}
+
+
+.card h2{
+
+    font-size:26px;
+
+}
+
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+}
+
+
+pre{
+
+    font-size:13px;
+
+}
+
+
+}
